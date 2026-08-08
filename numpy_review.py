@@ -30,9 +30,31 @@ import torch
 # m2 = torch.FloatTensor([[2, 5]])
 # print(m1 + m2)
 
-m1 = torch.FloatTensor([[2, 5], [3, 4]])
-m2 = torch.FloatTensor([[3], [6]])
+# m1 = torch.FloatTensor([[2, 5], [3, 4]])
+# m2 = torch.FloatTensor([[3], [6]])
 # print(m1 + m2)
 # print(m2)
-print(m1 @ m2)
+# print(m1 @ m2)
 # print(m2 * m1)
+
+# t = torch.FloatTensor([1, 2])
+# print(t.mean())
+
+# t = torch.LongTensor([1, 2])
+# try:
+#     print(t.mean())
+# except Exception as exc:
+#     print(exc)
+
+t = torch.FloatTensor([[1, 2], [3, 4]])
+# print(t)
+
+# print(t.mean())
+# print(t.mean(dim=0))
+# print(t.mean(dim=1))
+# print(t.mean(dim=-1))
+# print(t.sum(dim=1))
+
+print(t.max())
+print(t.max(dim=0))
+print(t.max(dim=0)[0])
